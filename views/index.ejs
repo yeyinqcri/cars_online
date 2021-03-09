@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head.ejs') %>
+
+    <body class="fix-header fix-sidebar card-no-border">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <%- include('partials/preloader.ejs') %>
+            <!-- ============================================================== -->
+            <!-- Main wrapper - style you can find in pages.scss -->
+            <!-- ============================================================== -->
+            <div id="main-wrapper">
+                <!-- ============================================================== -->
+                <!-- Topbar header - style you can find in pages.scss -->
+                <!-- ============================================================== -->
+                <%- include('partials/header.ejs') %>
+                    <!-- ============================================================== -->
+                    <!-- End Topbar header -->
+                    <!-- ============================================================== -->
+                    <!-- ============================================================== -->
+                    <!-- Left Sidebar - style you can find in sidebar.scss  -->
+                    <!-- ============================================================== -->
+                    <%- include('partials/sidebar.ejs') %>
+                        <!-- ============================================================== -->
+                        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+                        <!-- ============================================================== -->
+                        <!-- ============================================================== -->
+                        <!-- Page wrapper  -->
+                        <!-- ============================================================== -->
+                        <div class="page-wrapper">
+                            <!-- ============================================================== -->
+                            <!-- Bread crumb and right sidebar toggle -->
+                            <!-- ============================================================== -->
+                            <div class="row page-titles">
+                                <div class="col-md-5 align-self-center">
+                                    <h3 class="text-themecolor">Dashboard</h3>
+                                </div>
+                                <div class="col-md-7 align-self-center">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                                        <li class="breadcrumb-item active">Dashboard</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- ============================================================== -->
+                            <!-- Container fluid  -->
+                            <!-- ============================================================== -->
+                            <div class="container-fluid">
+                                <!-- ============================================================== -->
+                                <!-- Start Page Content -->
+                                <!-- ============================================================== -->
+                                <!-- Row -->
+                                <div class="row">
+                                    <!-- Column -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <h2>2376 <i class="font-14 text-danger"></i></h2>
+                                                        <h6>Total LCDs</h6>
+                                                    </div>
+                                                    <div class="col-4 align-self-center text-right  p-l-0">
+                                                        <div class="stat-ic text-info"><i class="ti-desktop"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <!-- Row -->
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <h2 class="">36<i class="font-14 text-success"></i></h2>
+                                                        <h6>Total Images</h6>
+                                                    </div>
+                                                    <div class="col-4 align-self-center text-right p-l-0">
+                                                        <div class="stat-ic text-success"><i class="ti-image"></i></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <!-- Row -->
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <h2>152 <i class="font-14 text-success"></i></h2>
+                                                        <h6>Total Videos</h6>
+                                                    </div>
+                                                    <div class="col-4 align-self-center text-right p-l-0">
+                                                        <div class="stat-ic text-purple"><i class="ti-video-camera"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column -->
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <!-- Row -->
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <h2>35<i class="font-14 text-danger"></i></h2>
+                                                        <h6>Ads Created</h6>
+                                                    </div>
+                                                    <div class="col-4 align-self-center text-right p-l-0">
+                                                        <div class="stat-ic text-warning"><i class="ti-layers"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Row -->
+                                <!-- ============================================================== -->
+                                <!-- End PAge Content -->
+                                <!-- ============================================================== -->
+                                <!-- ============================================================== -->
+                                <!-- Start Page Content -->
+                                <!-- ============================================================== -->
+                                <div class="row el-element-overlay">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-01.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#video-modal"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-02.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#markting-modal"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-03.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#modalthree"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-01.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#video-modal"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-01.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#video-modal"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-02.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#markting-modal"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-03.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#modalthree"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card">
+                                            <div class="el-card-item">
+                                                <div class="el-card-avatar el-overlay-1"><img
+                                                        src="img/templates/temp-01.png" alt="user" />
+                                                    <div class="el-overlay">
+                                                        <ul class="el-info">
+                                                            <li><a class="btn default btn-outline" href="#"
+                                                                    data-toggle="modal" data-target="#video-modal"><i
+                                                                        class="icon-control-play"></i></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="el-card-content">
+                                                    <h3>User 1</h3>
+                                                    <div class="action-buttons">
+                                                        <a class="btn btn-sm waves-effect waves-light btn-info m-r-10"
+                                                            href="#">EDIT</a>
+                                                        <a class="btn btn-sm waves-effect waves-light btn-danger"
+                                                            href="#">DELETE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- video modal -->
+                                <div class="modal fade modalone" id="video-modal" tabindex="-1" role="dialog"
+                                    aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-contentarea">
+                                                    <button class="nxtbtn"><i class="ti-arrow-right"></i></button>
+                                                    <div class="row paddingzero">
+                                                        <div class="col-xs-12 col-sm-6 col-md-5">
+                                                            <div class="row">
+                                                                <div class="modalcontent-box">
+                                                                    <div class="titel">
+                                                                        <h2>Brand Name</h2>
+                                                                    </div>
+                                                                    <div class="text-box">
+                                                                        <h3>sub heading here</h3>
+                                                                        <p>Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard dummy
+                                                                            text ever since the 1500s.</p>
+                                                                        <p>Lorem Ipsum is simply dummy text of the
+                                                                            printing and typesetting industry. Lorem
+                                                                            Ipsum has been the industry's standard dummy
+                                                                            text ever since the 1500s.</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-6 col-md-7">
+                                                            <div class="row">
+                                                                <div class="video-box">
+                                                                    <figure>
+                                                                        <img src="img/video-img.jpg"
+                                                                            alt="image description">
+                                                                    </figure>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+                                <!-- /.modal -->
+                                <!-- marketing modal -->
+                                <div class="modal fade modaltwo" id="markting-modal" tabindex="-1" role="dialog"
+                                    aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-contentarea">
+                                                    <div class="row paddingzero">
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                                            <div class="row">
+                                                                <div class="img-box">
+                                                                    <figure>
+                                                                        <img src="img/popup-img1.jpg"
+                                                                            alt="image description">
+                                                                    </figure>
+                                                                    <div class="price-box">
+                                                                        <h3>$<sub>500</sub></h3>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                                            <div class="row">
+                                                                <div class="modalcontent-box">
+                                                                    <div class="modalcontent-boxholder">
+                                                                        <div class="text-box">
+                                                                            <h2>MAIN HEADING HERE</h2>
+                                                                            <p>Cras ultricies ligula sed magna dictum
+                                                                                porta. Curabitur non nulla sit amet nisl
+                                                                                tempus convallis quis ac lectus. </p>
+                                                                            <p>Cras ultricies ligula sed magna dictum
+                                                                                porta.</p>
+                                                                            <span class="date">dated: 05-06-2018</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal-content -->
+                                    </div>
+                                    <!-- /.modal-dialog -->
+                                </div>
+                                <!-- /.modal -->
+                                <!-- marketing modal -->
+                                <div class="modal fade modalthree" id="modalthree" tabindex="-1" role="dialog"
+                                    aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="modal-contentarea">
+                                                    <div class="tg-modalbox">
+                                                        <div class="modalcontent-box">
+                                                            <span class="tg-date">dated: 05-06-2018</span>
+                                                            <div class="text-box">
+                                                                <h2>LOREM IPSUM DE UTENIUM DOLROE</h2>
+                                                                <span class="price-box">
+                                                                    <h3>$<sub>500</sub></h3>
+                                                                </span>
+                                                                <div class="description">
+                                                                    <p>Cras ultricies ligula sed magna dictum porta.
+                                                                        Curabitur non nulla sit amet nisl tempus convlis
+                                                                        quis ac lectus. </p>
+                                                                    <p>Cras ultricies ligula sed magna dictum porta.</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal-dialog -->
+                            </div>
+                            <!-- /.modal -->
+                        </div>
+                        <!-- ============================================================== -->
+                        <!-- footer -->
+                        <!-- ============================================================== -->
+                        <footer class="footer"> © 2018 CarsOnline </footer>
+                        <!-- ============================================================== -->
+                        <!-- End footer -->
+                        <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Wrapper -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- All Jquery -->
+            <!-- ============================================================== -->
+            <script src="../assets/plugins/jquery/jquery.min.js"></script>
+            <!-- Bootstrap tether Core JavaScript -->
+            <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+            <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+            <!-- slimscrollbar scrollbar JavaScript -->
+            <script src="js/jquery.slimscroll.js"></script>
+            <!--Wave Effects -->
+            <!-- <script src="js/waves.js"></script> -->
+            <!--Menu sidebar -->
+            <script src="js/sidebarmenu.js"></script>
+            <!--stickey kit -->
+            <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+            <!--Custom JavaScript -->
+            <script src="js/custom.min.js"></script>
+            <!-- ============================================================== -->
+            <!-- This page plugins -->
+            <!-- ============================================================== -->
+            <!--sparkline JavaScript -->
+            <script src="../assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+            <!--morris JavaScript -->
+            <script src="../assets/plugins/raphael/raphael-min.js"></script>
+            <script src="../assets/plugins/morrisjs/morris.min.js"></script>
+            <!-- Chart JS -->
+            <script src="js/dashboard1.js"></script>
+            <!-- ============================================================== -->
+            <!-- Style switcher -->
+            <!-- ============================================================== -->
+            <script src="../assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    </body>
+
+</html>

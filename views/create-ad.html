@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <title>Create Ad</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/green-dark.css" id="theme" rel="stylesheet">
+    <link href="../assets/plugins/slick/slick.css" id="theme" rel="stylesheet">
+    <link href="../assets/plugins/slick/slick.theme.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <b>
+                            <!-- Light Logo icon -->
+                            <img src="img/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!--End Logo icon -->
+                        <span>
+                        <!-- Light Logo text -->    
+                        <img src="img/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav my-lg-0">
+                        <!-- ============================================================== -->
+                        <!-- Profile -->
+                        <!-- ============================================================== -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/users/1.jpg" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+                <div class="user-profile">
+                    <!-- User profile image -->
+                    <div class="profile-img"> <img src="img/users/1.jpg" alt="user" />                       
+                    </div>
+                    <!-- User profile text-->
+                    <div class="profile-text">
+                        <h5>Markarn Doe</h5>
+                        <a href="profile.html" class="" data-toggle="tooltip" title="Profile"><i class="ti-user"></i></a>
+                        <a href="login.html" class="" data-toggle="tooltip" title="Logout"><i class="ti-power-off"></i></a>
+                    </div>
+                </div>
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <li><a class="waves-effect waves-dark" href="index.html"><i class="icon-layers"></i><span class="hide-menu">Dashboard</span>
+                        </a></li>
+                        <li><a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-people"></i><span class="hide-menu">Users</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="add-user.html">Add User</a></li>
+                                <li><a href="view-all-users.html">View All Users</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="waves-effect waves-dark" href="add-text.html"><i class="ti-receipt"></i><span class="hide-menu">Add Text</span></a></li>
+                        <li><a class="waves-effect waves-dark" href="add-images.html"><i class="icon-picture"></i><span class="hide-menu">Add Images</span></a></li>
+                        <li><a class="waves-effect waves-dark" href="add-videos.html"><i class="icon-film"></i><span class="hide-menu">Add Videos</span></a></li>
+                        <li class="active"><a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-grid"></i><span class="hide-menu">Ads</span>
+                        </a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a class="active" href="create-ads.html">Create Ads</a></li>
+                                <li><a href="view-all-ads.html">View All Ads</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="row page-titles">
+                <div class="col-md-5 align-self-center">
+                    <h3 class="text-themecolor">Create Ad</h3>
+                </div>
+                <div class="col-md-7 align-self-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                        <li class="breadcrumb-item">Ads</li>
+                        <li class="breadcrumb-item active">Create Ad</li>
+                    </ol>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <form>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Select Template</h4>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="slider-box">
+                                                <div class="template-area">
+                                                    <div class="img-checkbox">
+                                                        <input type="checkbox" id="temp-img-1" class="check-with-label" />
+                                                        <label for="temp-img-1" class="label-for-check">
+                                                            <img class="image-select" src="img/templates/temp-01.png" />
+                                                        </label>
+                                                    </div>      
+                                                    <div class="ss-title">Template - 1</div>
+                                                </div>
+                                                <div class="template-area">
+                                                    <div class="img-checkbox">
+                                                        <input type="checkbox" id="temp-img-2" class="check-with-label" />
+                                                        <label for="temp-img-2" class="label-for-check">
+                                                            <img class="image-select" src="img/templates/temp-02.png" />
+                                                        </label>
+                                                    </div>      
+                                                    <div class="ss-title">Template - 2</div>
+                                                </div>
+                                                <div class="template-area">
+                                                    <div class="img-checkbox">
+                                                        <input type="checkbox" id="temp-img-3" class="check-with-label" />
+                                                        <label for="temp-img-3" class="label-for-check">
+                                                            <img class="image-select" src="img/templates/temp-03.png" />
+                                                        </label>
+                                                    </div>      
+                                                    <div class="ss-title">Template - 3</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Select Text</h4>
+                                    <div class="row">
+                                        <div class="col-sm-8 col-lg-6">
+                                        <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+                                            <option value="Category 1">Title 1: Lorem Ipsum Dolor</option>
+                                            <option value="Category 2">Title 2: Tortor eget felis</option>
+                                            <option value="Category 3">Title 3: Vivamus suscipit</option>
+                                            <option value="Category 4">Title 4: Curabitur aliquet</option>
+                                        </select>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Select Image</h4>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="slider-box">
+                                                <div class="ss-slider">
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-1" class="check-with-label" />
+                                                            <label for="check-img-1" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img1.jpg" />
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Image-1 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-2" class="check-with-label" />
+                                                            <label for="check-img-2" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img2.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-2 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-3" class="check-with-label" />
+                                                            <label for="check-img-3" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img3.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-3 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-4" class="check-with-label" />
+                                                            <label for="check-img-4" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img4.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-4 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-5" class="check-with-label" />
+                                                            <label for="check-img-5" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img5.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-5 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-6" class="check-with-label" />
+                                                            <label for="check-img-6" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img6.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-6 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-7" class="check-with-label" />
+                                                            <label for="check-img-7" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img7.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-7 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-8" class="check-with-label" />
+                                                            <label for="check-img-8" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img8.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-8 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-9" class="check-with-label" />
+                                                            <label for="check-img-9" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img9.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-9 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-10" class="check-with-label" />
+                                                            <label for="check-img-10" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img0.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-10 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-11" class="check-with-label" />
+                                                            <label for="check-img-11" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img1.jpg" />
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Image-11 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-12" class="check-with-label" />
+                                                            <label for="check-img-12" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img2.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-12 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-13" class="check-with-label" />
+                                                            <label for="check-img-13" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img3.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-13 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-14" class="check-with-label" />
+                                                            <label for="check-img-14" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img4.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-14 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-15" class="check-with-label" />
+                                                            <label for="check-img-15" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img5.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-15 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-16" class="check-with-label" />
+                                                            <label for="check-img-16" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img6.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-16 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-17" class="check-with-label" />
+                                                            <label for="check-img-17" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img7.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-17 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-18" class="check-with-label" />
+                                                            <label for="check-img-18" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img8.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-18 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-19" class="check-with-label" />
+                                                            <label for="check-img-19" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img9.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-19 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-img-20" class="check-with-label" />
+                                                            <label for="check-img-20" class="label-for-check">
+                                                                <img class="image-select" src="img/gallery/img0.jpg" />
+                                                            </label>
+                                                        </div>
+                                                        <div class="ss-title">Image-20 title will come here</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Select Video</h4>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="slider-box">
+                                                <div class="ss-slider">
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-1" class="check-with-label" />
+                                                            <label for="check-vid-1" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-1 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-2" class="check-with-label" />
+                                                            <label for="check-vid-2" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-2 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-3" class="check-with-label" />
+                                                            <label for="check-vid-3" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-3 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-4" class="check-with-label" />
+                                                            <label for="check-vid-4" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-4 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-5" class="check-with-label" />
+                                                            <label for="check-vid-5" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-5 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-6" class="check-with-label" />
+                                                            <label for="check-vid-6" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-6 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-7" class="check-with-label" />
+                                                            <label for="check-vid-7" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-7 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-8" class="check-with-label" />
+                                                            <label for="check-vid-8" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-8 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-9" class="check-with-label" />
+                                                            <label for="check-vid-9" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-9 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-10" class="check-with-label" />
+                                                            <label for="check-vid-10" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-10 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-11" class="check-with-label" />
+                                                            <label for="check-vid-11" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-11 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-12" class="check-with-label" />
+                                                            <label for="check-vid-12" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-12 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-13" class="check-with-label" />
+                                                            <label for="check-vid-13" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-13 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-14" class="check-with-label" />
+                                                            <label for="check-vid-14" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-14 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-15" class="check-with-label" />
+                                                            <label for="check-vid-15" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-15 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-16" class="check-with-label" />
+                                                            <label for="check-vid-16" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-16 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-17" class="check-with-label" />
+                                                            <label for="check-vid-17" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-17 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-18" class="check-with-label" />
+                                                            <label for="check-vid-18" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-18 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-19" class="check-with-label" />
+                                                            <label for="check-vid-19" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-19 title will come here</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="img-checkbox">
+                                                            <input type="checkbox" id="check-vid-20" class="check-with-label" />
+                                                            <label for="check-vid-20" class="label-for-check">
+                                                                <video class="image-select"><source src="videos/mov_bbb.mp4" type="video/mp4"></video>
+                                                            </label>
+                                                        </div>      
+                                                        <div class="ss-title">Video-20 title will come here</div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-6">
+                                            <h4 class="card-title">Select Sliding Rotation Time:</h4>
+                                            <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+                                                <option value="Category 1">2 sec</option>
+                                                <option value="Category 2">4 sec</option>
+                                                <option value="Category 3">6 sec</option>
+                                                <option value="Category 4">8 sec</option>
+                                            </select>  
+                                        </div>
+                                        <div class="col-sm-6 col-lg-6">
+                                            <h4 class="card-title">Assign User:</h4>
+                                            <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+                                                <option value="Category 1">User 1</option>
+                                                <option value="Category 2">User 2</option>
+                                                <option value="Category 3">User 3</option>
+                                                <option value="Category 4">User 4</option>
+                                            </select>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="pull-right">
+                                <button type="submit" class="btn btn-info waves-effect waves-light m-t-20 m-r-10">Preview</button>
+                                <button type="submit" class="btn btn-success waves-effect waves-light m-t-20">Create Ad</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- Row -->
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer">
+                © 2018 CarsOnline
+            </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    
+    <script src="../assets/plugins/slick/slick.js"></script>
+
+    <script>
+    $('.ss-slider').slick({
+        rows: 2,
+        slidesPerRow: 6,
+        slidesToScroll: 2,
+        nextArrow: '<i class="slick-next fa fa-arrow-right"></i>',
+        prevArrow: '<i class="slick-prev fa fa-arrow-left"></i>',
+        responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+              slidesPerRow: 2,
+              slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesPerRow: 1,
+                slidesToShow: 1,
+            }
+            }
+        ]
+    });
+    </script>
+
+</body>
+
+</html>
