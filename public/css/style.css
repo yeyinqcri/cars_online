@@ -5848,8 +5848,18 @@ a.mytooltip {
     background-position: center center;
     height: 100%;
     width: 100%;
+    padding: 30px 0;
+}
+
+
+.at-login{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
     padding: 10% 0;
-    position: fixed
 }
 
 .login-box {
