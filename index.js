@@ -1,9 +1,7 @@
 const express = require("express");
 const routes = require("./routes/routes");
 const path = require("path");
-const mongoose = require("mongoose");
 const { PORT, NODE_ENV } = require("./config/config");
-
 const app = express();
 
 //middlewares
